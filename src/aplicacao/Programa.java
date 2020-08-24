@@ -5,6 +5,7 @@
 package aplicacao;
 
 import borda.Posicao;
+import borda.Tabuleiro;
 
 /**
  * @author dlsob
@@ -17,8 +18,7 @@ public class Programa {
 	 */
 	public static void main(String[] args) {
 		
-		Posicao p = new Posicao(3, 5);
-		System.out.println(p);
+		Tabuleiro tab= new Tabuleiro(8,2);
 	}
 
 }
