@@ -4,8 +4,7 @@
  */
 package aplicacao;
 
-import borda.Posicao;
-import borda.Tabuleiro;
+import xadres.PartidaDeXadres;
 
 /**
  * @author dlsob
@@ -18,7 +17,8 @@ public class Programa {
 	 */
 	public static void main(String[] args) {
 		
-		Tabuleiro tab= new Tabuleiro(8,2);
+		PartidaDeXadres partida  =  new PartidaDeXadres();
+		UI.printTabuleiro(partida.getPecas());
 	}
 
 }
