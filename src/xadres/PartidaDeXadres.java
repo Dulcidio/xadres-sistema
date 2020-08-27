@@ -33,10 +33,15 @@ public class PartidaDeXadres {
 		return mat;
 	}
 	
+	public void localPecaNova(char coluna, int linha, PecasXadres peca) {
+		tabuleiro.localPeca(peca, new PosicaoXadres(coluna, linha).toPosicao());
+	}
+	
 	private void setuInicial() {
-		tabuleiro.localPeca(new Torre(tabuleiro,Cores.Brancas),new Posicao(2,1));
-		tabuleiro.localPeca(new Rei(tabuleiro,Cores.Brancas),new Posicao(0,7));
-		tabuleiro.localPeca(new Torre(tabuleiro,Cores.Pretas),new Posicao(7,7));
+		
+		localPecaNova('b', 6 , new Torre(tabuleiro,Cores.Brancas));
+		localPecaNova('e', 8 , new Rei(tabuleiro,Cores.Brancas));
+		localPecaNova('e', 1 ,new Torre(tabuleiro,Cores.Pretas));
 	}
 	
 }
