@@ -4,11 +4,13 @@
  */
 package xadres;
 
+import borda.TabuleiroExcessao;
+
 /**
  * @author dlsob
  *
  */
-public class XadresExcessao extends RuntimeException{
+public class XadresExcessao extends TabuleiroExcessao{
  
 	private static final long serialVersionUID = 1L;
 	
