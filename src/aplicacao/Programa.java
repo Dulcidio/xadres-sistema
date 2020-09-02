@@ -10,7 +10,7 @@ import java.util.Scanner;
 import xadres.PartidaDeXadres;
 import xadres.PecasXadres;
 import xadres.PosicaoXadres;
-import xadres.XadreExcessao;
+import xadres.XadresExcessao;
 
 /**
  * @author dlsob
@@ -40,7 +40,7 @@ public class Programa {
 				
 				PecasXadres pecaCapturada = partida.realizarMovimentoPeca(origem, destino);
 			}
-			catch(XadreExcessao e) {
+			catch(XadresExcessao e) {
 				System.out.println(e.getMessage());
 				sc.nextLine();
 			}

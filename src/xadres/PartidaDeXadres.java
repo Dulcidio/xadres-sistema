@@ -52,7 +52,7 @@ public class PartidaDeXadres {
 	
 	private void validarPosicaoOrigem(Posicao posicao) {
 		if(!tabuleiro.temPeca(posicao)) {
-			throw new XadreExcessao("Não existe peca na posicao de origem");
+			throw new XadresExcessao("Não existe peca na posicao de origem");
 		}
 		
 	}
